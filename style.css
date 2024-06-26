@@ -1,0 +1,131 @@
+:root {
+    /* fundo da pagina */
+    --clr-body: #181319;
+    /* fundo dos cards */
+    --clr-card: #241c25;
+    /* borda do header dos cards */
+    --clr-border: #b9acd2;
+    /* texto normal */
+    --clr-text: #e2d6eb;
+    /* texto links */
+    --clr-link: tomato;
+    /* texto navbar */
+    --clr-nav: #ffffff;
+    /* fundo do footer */
+    --clr-footer: #333333;
+    /* texto tooltip linkedin instagram etc */
+    --clr-tooltip: #2e222f;
+    /* fundo tooltip lnkedin */
+    --clr-linkedin: #0274b3;
+    /* fonte custom */
+    --font: 'VT323', monospace;
+}
+
+a{
+    color: #e2d6eb;
+    text-decoration: none;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font), Arial, sans-serif;
+    gap: 20px;
+}
+
+.fontepequena{
+    font-size: x-large;
+}
+
+body{
+    background-color: var(--clr-body);
+    color: var(--clr-text);
+    font-size: xx-large;
+}
+
+img{
+    max-width: 400px;
+    object-fit: contain;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+
+
+
+    justify-content: center;
+}
+
+.logo{
+    width: 250px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: -20px;
+}
+.logo2{
+    max-width: 250px;
+    float: left;
+}
+
+section{
+    margin: 0 auto;
+    max-width: clamp(300px, 100%, 800px);
+}
+.float{
+    float: left;
+}
+
+.titulo{
+    margin-top: 80px;
+}
+
+.social{
+    margin-bottom: 50px;
+}
+
+.c{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.R{
+    background-color: var(--clr-card);
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid #b9acd2;
+
+
+}
+
+#jsz{
+    transition: transform 0.8s ease; 
+    cursor: pointer; 
+}
+
+@media screen and (max-width:832px){
+    .flex-row{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 400px;
+    }
+    .flex-column{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo2{
+        float: none;
+        margin-bottom: -50px;
+    }
+}
